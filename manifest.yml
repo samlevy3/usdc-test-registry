@@ -7,7 +7,7 @@ applications:
       - docker
     docker:
       image: modelcontextprotocol/registry:dev
-    command: ["make", "dev-compose"]
+    command: make dev-compose
     env:
       MCP_REGISTRY_DATABASE_URL: ${MCP_REGISTRY_DATABASE_URL:-postgres://mcpregistry:mcpregistry@postgres:5432/mcp-registry}
       MCP_REGISTRY_ENVIRONMENT: ${MCP_REGISTRY_ENVIRONMENT:-test}
